@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Mystic Aura</title>
+    <link rel="stylesheet" href="pricing.css">
+    <link rel="stylesheet" href="../navfoot.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Mystic Aura</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="../services/services.html">Services</a></li>
+            <li><a href="../pricing/pricing.html">Pricing</a></li>
+        </ul>
+    </nav>
+
+    <!-- Pricing Section -->
+    <section class="pricing-main">
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <h2>Basic Plan</h2>
+                <p>$29/month</p>
+                <ul>
+                    <li>Basic Tarot Readings</li>
+                    <li>Monthly Newsletter</li>
+                    <li>Email Support</li>
+                </ul>
+                <button>Subscribe</button>
+            </div>
+            <div class="pricing-card">
+                <h2>Standard Plan</h2>
+                <p>$49/month</p>
+                <ul>
+                    <li>Extended Tarot Readings</li>
+                    <li>Weekly Newsletter</li>
+                    <li>Priority Email Support</li>
+                    <li>Access to Exclusive Content</li>
+                </ul>
+                <button>Subscribe</button>
+            </div>
+            <div class="pricing-card">
+                <h2>Premium Plan</h2>
+                <p>$99/month</p>
+                <ul>
+                    <li>Personalized Tarot Readings</li>
+                    <li>Weekly Newsletter</li>
+                    <li>24/7 Support</li>
+                    <li>Access to Exclusive Content</li>
+                    <li>One-on-One Consultations</li>
+                </ul>
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Mystic Aura. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

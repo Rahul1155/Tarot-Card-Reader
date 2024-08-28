@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystic Aura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navfoot.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="logo"><a href="index.html" class="logo">Mystic Aura</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="services/services.html">Servicing</a></li>
+            <li><a href="pricing/pricing.html">Pricing</a></li>
+        </ul>
+        <div class="menu-icon">
+            <span>&#9776;</span>
+        </div>
+    </nav>
+
+    <!-- welcome section for homepage -->
+    <div class="welcome-section">
+        <h1>Welcome to Mystic Aura</h1>
+        <p>Your gateway to spiritual enlightenment and inner peace. Explore our tarot readings, crystal collections, and holistic services to bring balance and positivity into your life.</p>
+        <div class="buttons">
+            <a href="services/services.html" class="btn">Shop</a>
+            <a href="./pricing/pricing.html" class="btn">Subscribe</a>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Mystic Aura</div>
+            <p>&copy; 2024 Mystic Aura. All rights reserved.</p>
+
+        </div>
+    </footer>
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
