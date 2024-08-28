@@ -95,6 +95,43 @@ body {
     }
 }
 
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+/* Mobile Styles */
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: linear-gradient(45deg, #ff6f61, #d4a5a5);
+        position: absolute;
+        top: 60px;
+        /* Adjust if necessary */
+        left: 0;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 80px;
+    }
+}
+
 
 /* footer styling */
 

@@ -13,12 +13,16 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">Mystic Aura</div>
-        <ul class="nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="../services/services.html">Services</a></li>
-            <li><a href="../pricing/pricing.html">Pricing</a></li>
-        </ul>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div class="nav-members">
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="../services/services.html">Services</a></li>
+                <li><a href="../pricing/pricing.html">Pricing</a></li>
+            </ul>
+        </div>
+
     </nav>
 
     <!-- Pricing Section -->
@@ -66,12 +70,10 @@
         <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
     </footer>
     <script>
-        const menuIcon = document.querySelector('.menu-icon');
-        const navLinks = document.querySelector('.nav-links');
-
-        menuIcon.addEventListener('click', () => {
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('active');
-        });
+        }
     </script>
 </body>
 
